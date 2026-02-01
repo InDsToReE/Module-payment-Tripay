@@ -9,7 +9,7 @@ const {
   cekTransaksi,
   cekDetailTransaksi,
   getMerchantTransactions
-} = require("../tripay/payment");
+} = require("/payment");
 
 // ==========================================
 // READLINE INTERFACE
@@ -583,4 +583,5 @@ main().catch((err) => {
   console.error("FATAL ERROR:", err);
   rl.close();
   process.exit(1);
+
 });
