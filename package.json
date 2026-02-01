@@ -1,0 +1,54 @@
+{
+  "name": "tripay-payment-gateway",
+  "version": "1.0.0",
+  "description": "Complete Tripay Payment Gateway Integration for Node.js - Support Virtual Account, E-Wallet, QRIS, and Retail payment methods",
+  "main": "payment.js",
+  "scripts": {
+    "start": "node example.js",
+    "dev": "node example.js",
+    "test": "node example.js",
+    "postinstall": "echo '\n✅ Dependencies installed successfully!\n📝 Next steps:\n1. Rename \"env\" to \".env\"\n2. Edit .env file with your Tripay credentials\n3. Run: npm start\n'"
+  },
+  "keywords": [
+    "tripay",
+    "payment",
+    "gateway",
+    "indonesia",
+    "virtual-account",
+    "qris",
+    "e-wallet",
+    "ovo",
+    "dana",
+    "shopeepay",
+    "bca",
+    "bni",
+    "bri",
+    "mandiri",
+    "alfamart",
+    "indomaret",
+    "payment-integration",
+    "merchant",
+    "transaction"
+  ],
+  "author": {
+    "name": "InDsToReE",
+    "url": "https://github.com/InDsToReE"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/InDsToReE/Module-payment-Tripay.git"
+  },
+  "bugs": {
+    "url": "https://github.com/InDsToReE/Module-payment-Tripay/issues"
+  },
+  "homepage": "https://github.com/InDsToReE/Module-payment-Tripay#readme",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "dotenv": "^16.4.1"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
+}
