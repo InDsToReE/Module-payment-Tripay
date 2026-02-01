@@ -1,0 +1,15 @@
+TRIPAY_MODE=sandbox
+
+# ===== SANDBOX =====
+TRIPAY_SANDBOX_API_KEY=dev_api_xxxx
+TRIPAY_SANDBOX_PRIVATE_KEY=dev_private_xxxx
+TRIPAY_SANDBOX_MERCHANT_CODE=T1234
+
+# ===== PRODUCTION =====
+TRIPAY_PROD_API_KEY=prod_api_xxxx
+TRIPAY_PROD_PRIVATE_KEY=prod_private_xxxx
+TRIPAY_PROD_MERCHANT_CODE=T9999
+
+# USER CONFIG
+USER_RETURN_URL=https://domainanda.com/return
+USER_WEBHOOK_URL=https://domainanda.com/webhook
