@@ -9,7 +9,7 @@ const {
   cekTransaksi,
   cekDetailTransaksi,
   getMerchantTransactions
-} = require("/payment");
+} = require("./payment");
 
 // ==========================================
 // READLINE INTERFACE
@@ -585,3 +585,4 @@ main().catch((err) => {
   process.exit(1);
 
 });
+
