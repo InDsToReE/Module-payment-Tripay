@@ -93,6 +93,8 @@ cd Module-payment-Tripay
 
 ### 📚 Install Dependencies
 
+**File `package.json` sudah ada di root folder project.** Langsung jalankan:
+
 ```bash
 npm install
 ```
@@ -100,6 +102,8 @@ npm install
 Dependencies yang akan diinstall:
 - `axios` - HTTP client untuk API calls
 - `dotenv` - Environment variable management
+
+> 💡 **Catatan:** File `package.json` sudah disediakan di repository. Anda **TIDAK perlu** membuat file baru. Cukup clone repository dan jalankan `npm install`.
 
 ---
 
@@ -279,10 +283,11 @@ Module-payment-Tripay/
 ├── 🎯 example.js              # Demo interaktif CLI
 ├── 📋 payment_code.json       # Data channel payment
 ├── 🔐 env                     # Template environment (rename to .env)
+├── 📦 package.json            # NPM configuration (SUDAH ADA DI REPO!)
 ├── 📖 README.md               # Dokumentasi (file ini)
-├── 📦 package.json            # npm configuration
+├── 📝 INSTALL.md              # Panduan instalasi detail
 ├── 🚫 .gitignore             # Git ignore rules
-└── 📁 node_modules/          # Dependencies (auto-generated)
+└── 📁 node_modules/          # Dependencies (auto-generated setelah npm install)
 ```
 
 ### 📄 File Utama
@@ -293,6 +298,27 @@ Module-payment-Tripay/
 | `example.js` | Interactive CLI untuk testing dan demo |
 | `env` | Template konfigurasi (harus direname ke `.env`) |
 | `payment_code.json` | Database channel payment lengkap |
+| `package.json` | NPM configuration (sudah disediakan di repo) |
+
+### ⚠️ PENTING: Struktur Flat (No Folders)
+
+Project ini menggunakan **flat structure** (semua file di root folder):
+
+```
+✅ BENAR:
+Module-payment-Tripay/
+├── package.json      ← Di root folder
+├── payment.js        ← Sejajar dengan package.json
+├── example.js
+└── .env
+
+❌ SALAH:
+Module-payment-Tripay/
+├── src/
+│   └── package.json  ← Jangan di folder lain
+├── payment.js
+└── ...
+```
 
 ---
 
